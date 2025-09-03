@@ -7,6 +7,7 @@ import retrofit2.http.Query;
 
 public interface ApiService {
 
+    //API ключ бесплатный и не стал убирать в ignore
     @GET("v1.4/movie?token=C7K0XW4-P7Q4RW0-MB0D3M3-5Z3V53E&field=rating.kp&search=7-10&sortField=votes.kp&sortType=-1&limit=30")
     Single<MovieResponse> loadMovies(@Query("page") int page);
 
